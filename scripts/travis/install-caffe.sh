@@ -9,6 +9,16 @@ then
     echo "Usage: $0 INSTALL_DIR"
     exit 1
 fi
+
+cat /etc/os-release
+echo "^^ /etc/os-release"
+cat /etc/lsb-release
+echo "^^ /etc/lsb-release"
+lsb-release -a
+echo "^^ lsb-release -a"
+
+
+
 INSTALL_DIR=$1
 mkdir -p $INSTALL_DIR
 
