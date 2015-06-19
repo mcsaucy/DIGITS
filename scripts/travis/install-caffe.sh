@@ -10,14 +10,6 @@ then
     exit 1
 fi
 
-cat /etc/os-release || true
-echo "^^ /etc/os-release"
-cat /etc/lsb-release || true
-echo "^^ /etc/lsb-release"
-lsb-release -a || true
-echo "^^ lsb-release -a"
-
-
 
 INSTALL_DIR=$1
 mkdir -p $INSTALL_DIR
