@@ -10,11 +10,11 @@ then
     exit 1
 fi
 
-cat /etc/os-release
+cat /etc/os-release || true
 echo "^^ /etc/os-release"
-cat /etc/lsb-release
+cat /etc/lsb-release || true
 echo "^^ /etc/lsb-release"
-lsb-release -a
+lsb-release -a || true
 echo "^^ lsb-release -a"
 
 
